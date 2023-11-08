@@ -24,7 +24,7 @@ function Sidebar(props) {
     ]
 
 
-    return <div className="flex flex-column align-items-center bg-blue-400 w-1">
+    return <div className="flex flex-column align-items-center w-1">
         <img alt={"logo"} src={process.env.PUBLIC_URL + "/logo_.png"} className="w-3rem mt-3"/>
 
         {

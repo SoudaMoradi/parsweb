@@ -2,7 +2,7 @@ import {Avatar} from "primereact/avatar";
 
 function ItemContent({title,icon}) {
     return(
-        <div className="flex gap-2">
+        <div className="flex gap-2 w-6 justify-content-end p-2">
             <span>{title}</span>
             <Avatar icon={icon}/>
 
@@ -25,8 +25,8 @@ function ListContent(props) {
         {icon:"icon",title:"ارسال تیکت پشتیبانی"},
     ]
 
-    return <div className="flex flex-column w-4 bg-yellow-300">
-        <span className="font-bold text-4xl block">پشتیبانی</span>
+    return <div className="flex flex-column w-4 align-items-center bg-blue-400">
+        <span className="font-bold text-4xl">پشتیبانی</span>
         <p>درخواستهای پشتیبانی ناحیه کاربری/ناحیه کاربری/</p>
         <p>پشتیبانی</p>
 

@@ -5,15 +5,21 @@ import ListContent from "./ListContent";
 
 function Content(props) {
     return (
-        <div className="flex-1 flex bg-green-400">
-            <div className="flex ">
-                <Button label={'ارسال تیکت پشتیبانی'}/>
-                <span className="p-input-icon-left">
-                        <i className="pi pi-search" />
+        <div className="flex-1 flex">
+
+            <div className="flex-1 flex justify-content-center align-items-center">
+
+                <div className="w-8">
+                    <div className="flex gap-2  p-2">
+                        <Button label={'ارسال تیکت پشتیبانی'}/>
                         <InputText/>
-                    </span>
+                    </div>
+                    <div className="h-30rem bg-yellow-300">bottom</div>
+                </div>
+
             </div>
             <ListContent/>
+
         </div>
 
 

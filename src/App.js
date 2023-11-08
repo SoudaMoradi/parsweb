@@ -7,9 +7,7 @@ import Content from "./Content";
 function App() {
   return (
       <div className="flex h-screen">
-
-              <Content/>
-
+          <Content/>
           <Sidebar/>
       </div>
   );
