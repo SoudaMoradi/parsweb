@@ -1,14 +1,14 @@
 import {Avatar} from "primereact/avatar";
 
+
+
 function ItemContent({title,icon}) {
     return(
         <div className="flex gap-2 w-6 justify-content-end p-2">
             <span>{title}</span>
             <Avatar icon={icon}/>
-
         </div>
     )
-
 }
 
 
@@ -25,14 +25,17 @@ function ListContent(props) {
         {icon:"icon",title:"ارسال تیکت پشتیبانی"},
     ]
 
-    return <div className="flex flex-column w-4 align-items-center bg-blue-400">
-        <span className="font-bold text-4xl">پشتیبانی</span>
-        <p>درخواستهای پشتیبانی ناحیه کاربری/ناحیه کاربری/</p>
-        <p>پشتیبانی</p>
+    return <div className="flex flex-column w-3 align-items-center pt-8">
+       <div className="flex align-items-center">
+           <span className="font-bold text-4xl">پشتیبانی</span>
+       </div>
 
-        {
-            itmes.map((i)=>{return<ItemContent title={i.title} icon={i.icon}/>})
-        }
+        <p>درخواستهای پشتیبانی ناحیه کاربری/ناحیه کاربری/</p>
+           <p>پشتیبانی</p>
+
+           {
+               itmes.map((i)=>{return<ItemContent title={i.title} icon={i.icon}/>})
+           }
 
     </div>;
 }

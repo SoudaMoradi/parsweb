@@ -1,12 +1,13 @@
 import Sidebar from "./Sidebar";
-import ListContent from "./ListContent";
 import Content from "./Content";
+import './App.css';
+
 
 
 
 function App() {
   return (
-      <div className="flex h-screen">
+      <div className="flex h-screen overflow-scroll">
           <Content/>
           <Sidebar/>
       </div>
